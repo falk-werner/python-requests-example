@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fetch"
+description = "Downloads a file from an URL"
+version = "0.1.0"
+requires-python = ">= 3.8"
+dependencies = [
+    "requests"
+]
+authors = [
+    {name = "Falk Werner"}
+]
+
+[project.urls]
+Repository = "https://github.com/falk-werner/python-requests-example"
+
+[tool.setuptools]
+py-modules = ["fetch"]
+
+[project.scripts]
+fetch = "fetch:main"
